@@ -1,0 +1,119 @@
+body {
+    background-color: #2c3e50;
+}
+h1 {
+    color : #FFDEAD;
+    margin-bottom: 0%;
+}
+li, button{
+    color:#FFDEAD;
+    float: right;
+}
+.js-rename, button{
+    border-radius: 50px;
+    background-color: transparent;
+    color:#FFDEAD;
+    outline:0;
+    border-color: none;
+}
+.js-rename{
+    margin-top: 10px;
+}
+.name{
+    width:260px;
+    background-color : transparent; /*배경 투명하게*/
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom-style: solid;
+    border-color: white;
+    outline: 0;
+    font-size:xx-large;
+    color:#FFDEAD;
+}
+.name::placeholder{
+    color : #FFDEAD;
+    font-size:x-large;
+}
+
+.todo {
+    background-color : transparent; /*배경 투명하게*/
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom-style: solid;
+    border-color: white;
+    outline: 0;
+    font-size: large;
+    color:#FFDEAD;
+}
+.todo::placeholder{
+    color:#FFDEAD;
+}
+.js-clock {
+    font-size: 80px;
+    margin-bottom : 40px;
+    height : 250px;
+}
+.js-toDoList, .js-toDoFinish, li{
+    list-style : none;
+    text-align: left;
+    padding:0%;
+    width : 169px;
+}
+.center{
+    display :flex;
+    align-items: center;
+    flex-direction : column;
+    vertical-align: middle;
+}
+.clicked{
+    color : gray;
+}
+
+.form, .greetings {
+    display : none;
+    text-align : center;
+    margin:0%;
+}
+.greetings{
+    font-size:50px;
+    color:#FFDEAD;
+}
+.js-weather {
+    display: flex;
+    flex-direction:column-reverse;
+    align-items:flex-end;
+    color:#FFDEAD;
+    font-style: solid;
+}
+
+.showing {
+    display : block;
+}
+/* 어떤 모양에서 어떤 모양으로 변할 지 정함. */
+@keyframes fadeIn{
+    /* 시작할때 모양 */
+    from{
+        opacity : 0;
+    }
+    /* 끝날때 모양 */
+    to {
+        opacity :1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 엘리먼트 쌓임 순서를 정함.*/
+    animation: fadeIn .5s linear
+}
+h3{
+    color: white;
+    margin:0;
+    margin-top : 10px;
+}
